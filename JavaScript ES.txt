@@ -1,0 +1,22 @@
+Funções de primeira classe => função pode ser atribuida, ser passada de parâmetro, pode ser retornada por outra função
+
+Currying -> pode armazenar a função com seu parâmetro e reutiliza-la sem precisar passar o paramêtro de novo
+
+Hoisting -> elevar uma criação de variável no escopo, ou uma função inteira de modo a garantir que a variável/função exista antes de sua utilização
+
+Imutabilidade -> objetos instanciados não podem ser modificados, um novo objeto deve ser criado
+
+Tipos e variáveis
+
+var -> não respeita escopo de bloco, é sempre global ou de função
+
+let -> respeita o escopo de bloco, fora isso declara uma variável assim como var
+
+const -> declara uma constante, respeita o escopo de bloco assim como o let
+constante de tipo primitivo não pode ter o valor alterado
+constante de objeto, pode alterar os atributos, porém não pode atribuir um novo objeto
+constante de array, pode incluir, remover e alterar elementos diretamente, mas não pode atribuir uma nova array
+
+O JavaScript teve dois nomes anteriores: Mocha e Livescript.
+Foi lançado junto com a versão beta do Netscape 2.0
+
