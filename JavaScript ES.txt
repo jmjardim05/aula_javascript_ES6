@@ -20,3 +20,28 @@ constante de array, pode incluir, remover e alterar elementos diretamente, mas n
 O JavaScript teve dois nomes anteriores: Mocha e Livescript.
 Foi lançado junto com a versão beta do Netscape 2.0
 
+Orientação a objetos
+--------------------
+Todo objeto tem um protótipo e é instanciado por um constructor
+
+objeto.__proto__ => traz o protótipo do objeto
+objeto.__proto__.constructor = retirna o construtor do objeto
+
+var texto = "João"
+
+texto.__proto__
+String {"", constructor: ƒ, anchor: ƒ, big: ƒ, blink: ƒ, …}anchor: ƒ anchor()big: ƒ big()blink: ƒ blink()bold: ƒ bold()charAt: ƒ charAt()charCodeAt: ƒ charCodeAt()codePointAt: ƒ codePointAt()concat: ƒ concat()constructor: ƒ String()arguments: (...)caller: (...)fromCharCode: ƒ fromCharCode()fromCodePoint: ƒ fromCodePoint()length: 1name: "String"prototype: Stringanchor: ƒ anchor()big: ƒ big()blink: ƒ blink()bold: ƒ bold()charAt: ƒ charAt()charCodeAt: ƒ charCodeAt()codePointAt: ƒ codePointAt()concat: ƒ concat()constructor: ƒ String()arguments: (...)caller: (...)fromCharCode: ƒ fromCharCode()fromCodePoint: ƒ fromCodePoint()length: 1name: "String"prototype: String {"", constructor: ƒ, anchor: ƒ, big: ƒ, blink: ƒ, …}raw: ƒ raw()__proto__: ƒ ()[[Scopes]]: Scopes[0]endsWith: ƒ endsWith()fixed: ƒ fixed()fontcolor: ƒ fontcolor()fontsize: ƒ fontsize()includes: ƒ includes()indexOf: ƒ indexOf()italics: ƒ italics()lastIndexOf: ƒ lastIndexOf()length: 0link: ƒ link()localeCompare: ƒ localeCompare()match: ƒ match()matchAll: ƒ matchAll()normalize: ƒ normalize()padEnd: ƒ padEnd()padStart: ƒ padStart()repeat: ƒ repeat()replace: ƒ replace()replaceAll: ƒ replaceAll()search: ƒ search()slice: ƒ slice()small: ƒ small()split: ƒ split()startsWith: ƒ startsWith()strike: ƒ strike()sub: ƒ sub()substr: ƒ substr()substring: ƒ substring()sup: ƒ sup()toLocaleLowerCase: ƒ toLocaleLowerCase()toLocaleUpperCase: ƒ toLocaleUpperCase()toLowerCase: ƒ toLowerCase()toString: ƒ toString()toUpperCase: ƒ toUpperCase()trim: ƒ trim()trimEnd: ƒ trimEnd()trimLeft: ƒ trimStart()trimRight: ƒ trimEnd()trimStart: ƒ trimStart()valueOf: ƒ valueOf()Symbol(Symbol.iterator): ƒ [Symbol.iterator]()__proto__: Object[[PrimitiveValue]]: ""raw: ƒ raw()__proto__: ƒ ()[[Scopes]]: Scopes[0]endsWith: ƒ endsWith()fixed: ƒ fixed()fontcolor: ƒ fontcolor()fontsize: ƒ fontsize()includes: ƒ includes()indexOf: ƒ indexOf()italics: ƒ italics()lastIndexOf: ƒ lastIndexOf()length: 0link: ƒ link()localeCompare: ƒ localeCompare()match: ƒ match()matchAll: ƒ matchAll()normalize: ƒ normalize()padEnd: ƒ padEnd()padStart: ƒ padStart()repeat: ƒ repeat()replace: ƒ replace()replaceAll: ƒ replaceAll()search: ƒ search()slice: ƒ slice()small: ƒ small()split: ƒ split()startsWith: ƒ startsWith()strike: ƒ strike()sub: ƒ sub()substr: ƒ substr()substring: ƒ substring()sup: ƒ sup()toLocaleLowerCase: ƒ toLocaleLowerCase()toLocaleUpperCase: ƒ toLocaleUpperCase()toLowerCase: ƒ toLowerCase()toString: ƒ toString()toUpperCase: ƒ toUpperCase()trim: ƒ trim()trimEnd: ƒ trimEnd()trimLeft: ƒ trimStart()trimRight: ƒ trimEnd()trimStart: ƒ trimStart()valueOf: ƒ valueOf()Symbol(Symbol.iterator): ƒ [Symbol.iterator]()__proto__: Object[[PrimitiveValue]]: ""
+
+texto.__proto__.constructor
+ƒ String() { [native code] }
+
+texto.__proto__.constructor === String
+true
+
+o operador instanceof permite verificar qual é o tipo da variável
+
+var texto2 = new String("João")
+
+texto2 instanceof String
+true
+
