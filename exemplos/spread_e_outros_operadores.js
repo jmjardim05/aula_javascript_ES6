@@ -49,5 +49,5 @@ delete veiculo_com_marca.modelo;
 console.log("removemos o atributo modelo ", veiculo_com_marca);
 
 console.log(lista);
-delete lista[0]; //deixa o primeiro item vazio, para ecluir o item todo usar shfit() ou pop()
+delete lista[0]; //deixa o primeiro item vazio, para excluir o item todo usar shfit() ou pop()
 console.log("delete lista[0] deixa o primeiro item vazio", lista);
