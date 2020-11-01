@@ -10,9 +10,6 @@ class ID {
   }
 }
 
-const objid = new ID();
-console.log(objid.contador);
-
 class Cliente {
   #id = 0;
 

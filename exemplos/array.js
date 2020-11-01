@@ -43,6 +43,7 @@ let agendasNoDomingo = agendamentos.filter(agendamento => agendamento.diaSemana 
 console.log("agendamentos no domingo", agendasNoDomingo);
 
 // map() => retorna um novo array a partir da função definida que será executa para cada elemento
+// o novo array tem o mesmo tamanho da array original
 let agendasComHora = agendamentos.map(agendamento => {
     let novoComHora = 
     {
